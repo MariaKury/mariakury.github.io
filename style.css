@@ -106,11 +106,11 @@ body {
 
 
 /*БАННЕР*/
-.banner_burger{
+.banner_burger {
   display: none;
 }
 
-.banner{
+.banner {
   position: fixed;
   top: 0;
   height: 10vh;
@@ -119,7 +119,7 @@ body {
   background: white;
 }
 
-.banner_row{
+.banner_row {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -128,20 +128,20 @@ body {
 }
 
 
-.logo img{
+.logo img {
   height: 80%;
 }
 
-.menu{
+.menu {
   position: relative;
 }
 
-.menu_row{
+.menu_row {
   position: relative;
   display: flex;
 }
 
-.menu_row__link{
+.menu_row__link {
   position: relative;
   margin: 0 10px;
   padding: 10px;
@@ -152,30 +152,31 @@ body {
   color: #261421;
 }
 
-.menu_row__link:hover{
- color: white;
- background: #751a2c;
- border: 2px solid #751a2c;
-}
+  .menu_row__link:hover {
+    color: white;
+    background: #751a2c;
+    border: 2px solid #751a2c;
+  }
 
 
 /*БАННЕР - АДАПТИВ*/
 @media (max-width: 769px) {
-  .menu{
+  .menu {
     display: none;
   }
 
-  .banner_burger{
+  .banner_burger {
     display: block;
   }
-  .banner_burger svg{
-    position: relative;
-    fill: #261421;
-    height: 40%;
-}
+
+    .banner_burger svg {
+      position: relative;
+      fill: #261421;
+      height: 40%;
+    }
 
 
-  .menu_row{
+  .menu_row {
     position: fixed;
     top: 10vh;
     left: 50%;
@@ -184,7 +185,8 @@ body {
     flex-direction: column;
     background-color: white;
   }
-  .menu_row__link{
+
+  .menu_row__link {
     position: relative;
     margin: 0 20px;
     padding: 30px;
@@ -196,7 +198,7 @@ body {
     color: #261421;
   }
 
-  .menu_link_dec:after{
+  .menu_link_dec:after {
     content: '';
     height: 1px;
     width: 30px;
@@ -205,14 +207,13 @@ body {
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-
   }
 }
 
 
 
 /*ГЛАВНАЯ*/
-.header{
+.header {
   position: relative;
   margin-top: 10vh;
   height: 90vh;
@@ -221,7 +222,7 @@ body {
   flex-direction: column;
 }
 
-.header_fon{
+.header_fon {
   position: absolute;
   overflow: hidden;
   height: 92%;
@@ -229,13 +230,13 @@ body {
   z-index: 1;
 }
 
-.header_fon img{
-  position: absolute;
-  width: 100%;
-  top: -20vh;
-}
+  .header_fon img {
+    position: absolute;
+    width: 100%;
+    top: -20vh;
+  }
 
-.header_body{
+.header_body {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -244,7 +245,7 @@ body {
   padding-bottom: 12vh;
 }
 
-.header_body_column{
+.header_body_column {
   max-width: 400px;
   margin: 20px 0;
   color: white;
@@ -252,11 +253,11 @@ body {
   line-height: 22px;
 }
 
-.header_title{
+.header_title {
   font-size: 30px;
 }
 
-.header_buttons{
+.header_buttons {
   position: relative;
   width: 100%;
   height: 60px;
@@ -273,36 +274,36 @@ body {
   transition: 0.5s;
 }
 
-.header_buttons_button a{
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 50%;
-  transform: translate(0, -50%);
-  text-decoration: none;
-  color: white;
-}
+  .header_buttons_button a {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-decoration: none;
+    color: white;
+  }
 
-.header_buttons_button span{
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 50%;
-  transform: translate(0, -50%);
-}
+  .header_buttons_button span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
 
 
-.botton_white{
+.botton_white {
   border: 2px solid white;
 }
 
-.botton_white:hover{
-  color: #261421;
-  background: white;
-}
+  .botton_white:hover {
+    color: #261421;
+    background: white;
+  }
 
 
-.header_footer_svg{
+.header_footer_svg {
   position: absolute;
   bottom: 0;
   justify-content: flex-end;
@@ -313,11 +314,11 @@ body {
   transform: translate(-50%, 50%);
 }
 
-.telefon{
+.telefon {
   font-size: 19px;
 }
 
-.header_footer_link{
+.header_footer_link {
   position: absolute;
   display: flex;
   position: relative;
@@ -327,35 +328,35 @@ body {
   margin: 0px 20px;
 }
 
-.header_footer_link svg{
-  width: 35px;
-  transition: 0.5s;
-  padding: 5px;
-  fill: #751a2c;
-  background: white;
-  border: 2px solid #751a2c;
-}
-
-.header_footer_link svg:hover{
-  fill: white;
-  background: #751a2c;
-  border: 2px solid #751a2c;
+  .header_footer_link svg {
+    width: 35px;
+    transition: 0.5s;
+    padding: 5px;
+    fill: #751a2c;
+    background: white;
+    border: 2px solid #751a2c;
   }
 
-/*ГЛАВНАЯ - АДПТИВ */ 
+    .header_footer_link svg:hover {
+      fill: white;
+      background: #751a2c;
+      border: 2px solid #751a2c;
+    }
+
+/*ГЛАВНАЯ - АДПТИВ */
 @media (max-width: 1200px) {
 
-.header_fon img{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  object-fit: cover;
-}
+  .header_fon img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 769px) {
-  .header_body_column{
+  .header_body_column {
     max-width: 400px;
     margin: 10px 0;
     color: white;
@@ -364,15 +365,15 @@ body {
   }
 
 
-  .header_title{
+  .header_title {
     font-size: 25px;
   }
 
-  .header_buttons_button{
+  .header_buttons_button {
     width: 48%;
   }
 
-  .header_footer_link svg{
+  .header_footer_link svg {
     width: 30px;
     transition: 0.5s;
   }
@@ -382,19 +383,19 @@ body {
 
 
 /*О НАС*/
-.about{
+.about {
   position: relative;
   width: 100vw;
   padding: 50px 0px 0px 0px;
 }
 
-.title{
+.title {
   position: relative;
   font-size: 30px;
   color: #261421;
 }
 
-.about_container{
+.about_container {
   margin-top: 20px;
   margin-bottom: 50px;
   display: flex;
@@ -404,13 +405,13 @@ body {
   line-height: 22px;
 }
 
-.about_row{
+.about_row {
   flex: 0 1 50%;
   position: relative;
   padding: 0px 30px;
 }
 
-.about_subtitle{
+.about_subtitle {
   font-size: 23px;
   margin: 20px 0px;
 }
@@ -420,14 +421,14 @@ body {
 
 @media (max-width: 769px) {
 
-  .title{
+  .title {
     position: relative;
     font-size: 24px;
     color: #261421;
     margin: 30px 0px 0px 0px;
   }
 
-  .about_container{
+  .about_container {
     margin-top: 20px;
     margin-bottom: 50px;
     display: flex;
@@ -437,24 +438,23 @@ body {
     line-height: 20px;
   }
 
-  .about_row{
+  .about_row {
     flex: 0 1 50%;
     position: relative;
     padding: 0px 20px;
   }
 
-  .about_subtitle{
+  .about_subtitle {
     font-size: 20px;
     margin: 20px 0px;
-}
-
+  }
 }
 
 
 
 
 /*ПОЧЕМУ МЫ*/
-.why_us{
+.why_us {
   position: relative;
   width: 100vw;
   height: auto;
@@ -463,46 +463,45 @@ body {
   background: url(images/products/oproducts_fon.jpg) 0 0/cover no-repeat fixed;
 }
 
-.why_us_container{
+.why_us_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.why_us_title{
+.why_us_title {
   margin: 10px;
   font-size: 27px;
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.why_us_text{
+.why_us_text {
   flex: 0 1 30%;
   font-size: 17px;
   line-height: 22px;
 }
 
-.why_us_column{
+.why_us_column {
   padding: 15px;
   margin: 10px;
   background-color: rgba(255, 255, 255, 0.7);
-  transition: 0.5s;  
-  
+  transition: 0.5s;
 }
 
-.why_us_column:hover{
-  background-color: white;
-}
+  .why_us_column:hover {
+    background-color: white;
+  }
 
 /*ПОЧЕМУ МЫ - АДПАТИВ*/
-@media (max-width: 769px){
-  .why_us_container{
+@media (max-width: 769px) {
+  .why_us_container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .why_us_title{
+  .why_us_title {
     margin: 10px;
     font-size: 24px;
     padding: 30px;
@@ -513,7 +512,7 @@ body {
 
 
 /*МАТЕРИАЛЫ*/
-.materials{
+.materials {
   padding: 50px 0px;
   font-size: 17px;
   line-height: 22px;
@@ -521,32 +520,32 @@ body {
   background: url(images/materials_fon.jpg) 0 0/cover no-repeat fixed;
 }
 
-.materials_text li{
+.materials_text li {
   position: relative;
   margin: 10px 20px;
 }
 
-.materials_subtitle{
+.materials_subtitle {
   font-size: 23px;
   margin: 30px 0px;
 }
 
-.materials_flex{
+.materials_flex {
   display: flex;
 }
 
-.materials_row{
+.materials_row {
   position: relative;
   flex: 0 1 50%;
   padding: 0 30px;
 }
 
-.materials_flex{
+.materials_flex {
   display: flex;
 }
 
 
-.materials_text li:before{
+.materials_text li:before {
   content: '';
   position: absolute;
   background: white;
@@ -558,27 +557,30 @@ body {
 }
 
 /*МАТЕРИАЛЫ - АДАПТИВ*/
-@media (max-width: 769px){
+@media (max-width: 769px) {
 
-  .materials{
+  .materials {
     padding: 30px 0px;
     font-size: 15px;
     line-height: 20px;
   }
-  .materials_subtitle{
+
+  .materials_subtitle {
     font-size: 20px;
     margin: 20px 0px;
   }
 
-  .materials_text li{
+  .materials_text li {
     position: relative;
     margin: 10px 0px;
   }
-  .materials_flex{
+
+  .materials_flex {
     display: flex;
     flex-direction: column;
   }
-  .materials_row{
+
+  .materials_row {
     position: relative;
     flex: 0 1 50%;
     padding: 30px;
@@ -588,25 +590,25 @@ body {
 
 
 /*ТОВАРЫ*/
-.products{
+.products {
   width: 100%;
   background-color: #f7e7e4;
   padding: 50px;
   background: url(images/PF_2.jpg) 0 0/cover no-repeat fixed;
 }
 
-.products_flex{
+.products_flex {
   display: flex;
   flex-direction: column;
 }
 
-.products_container{
+.products_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.products_title{
+.products_title {
   font-size: 27px;
   padding: 30px;
   position: relative;
@@ -614,28 +616,28 @@ body {
   margin: 0 20px;
 }
 
-.products_title span{
-  display: inline-block;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.7);
-}
+  .products_title span {
+    display: inline-block;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 
-.products_text{
+.products_text {
   font-size: 20px;
   line-height: 22px;
 }
 
-.products_column{
+.products_column {
   position: relative;
   height: 100px;
   background-color: rgba(255, 255, 255, 0.7);
-  transition: 0.5s all;   
+  transition: 0.5s all;
   cursor: pointer;
   overflow: hidden;
   padding: 30px;
 }
 
-.product_name{
+.product_name {
   position: relative;
   top: 0;
   height: 100px;
@@ -643,100 +645,102 @@ body {
 }
 
 
-.product_text{
+.product_text {
   position: relative;
   bottom: 0;
   height: 200px;
   font-size: 16px;
 }
 
-.products_column:hover{
+.products_column:hover {
   background-color: white;
   height: 400px;
 }
 
 /*ТОВАРЫ*/
-@media (max-width: 769px){
-  .products{
+@media (max-width: 769px) {
+  .products {
     padding: 0px 0px;
   }
 
-  .products_title{
+  .products_title {
     font-size: 24px;
     padding: 30px 0px;
     margin: 0px 0px;
   }
 
-  .products_text{
+  .products_text {
     font-size: 18px;
     line-height: 21px;
   }
 
-  .product_text{
+  .product_text {
     position: relative;
     bottom: 0;
     height: 250px;
     font-size: 14px;
     margin-bottom: 10px;
-   }
+  }
 
-  .products_container{
+  .products_container {
     display: flex;
     flex-direction: column;
   }
 
-  .products_column{
+  .products_column {
     position: relative;
     height: 100px;
-    transition: 0.5s all;   
+    transition: 0.5s all;
     cursor: pointer;
     overflow: hidden;
     padding: 20px;
   }
-  .products_column:hover{
-    background-color: white;
-    height: 450px;
-  }
-  .products_container{
+
+    .products_column:hover {
+      background-color: white;
+      height: 450px;
+    }
+
+  .products_container {
     margin-bottom: 30px;
   }
 }
 
 
 
-.sales{
+.sales {
   margin: 80px 0px 0px 0px;
   padding: 30px 0px;
 }
 
-.sales_container{
+.sales_container {
   display: flex;
   height: 400px;
   width: 100%;
 }
 
-.sales_temporary{
+.sales_temporary {
   position: relative;
   flex: 0 1 70%;
   height: 100%;
   background: green;
 }
 
-.sales_temporary:before{
-  content: 'Новогодняя акция';
-  position: absolute;
-  height: 40px;
-  left: 20px;
-  padding: 0px 30px;
-  font-size: 18px;
-  top: -25px;
-  background: #b53c3c;
-  display: flex;
-  align-items: center;
-  color: white;
-}
+  .sales_temporary:before {
+    content: 'Новогодняя акция';
+    position: absolute;
+    height: 40px;
+    left: 20px;
+    padding: 0px 30px;
+    font-size: 18px;
+    top: -25px;
+    background: #b53c3c;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
 
-.new_year_text{
+.new_year_text {
   position: relative;
   height: 100%;
   width: 70%;
@@ -747,18 +751,20 @@ body {
   padding: 30px;
   padding-top: 150px;
 }
-.text_flex{
+
+.text_flex {
   display: flex;
   justify-content: space-between;
 }
-.title_happy{
+
+.title_happy {
   flex: 0 1 70%;
   font-size: 20px;
   line-height: 25px;
   padding: 0px 10px;
 }
 
-.sale_always{
+.sale_always {
   position: relative;
   flex: 30%;
   background: url(images/sales/sale_fon.jpg) 0 0/ cover no-repeat;
@@ -766,26 +772,28 @@ body {
   margin-left: 30px;
   padding-top: 150px;
 }
-.sale_always:before{
-  content: 'Наш подарок для Вас!';
-  position: absolute;
-  height: 40px;
-  left: 20px;
-  padding: 0px 30px;
-  font-size: 18px;
-  top: -25px;
-  background: #b53c3c;
-  display: flex;
-  align-items: center;
-  color: white;
-}
 
-.sale_always_text{
+  .sale_always:before {
+    content: 'Наш подарок для Вас!';
+    position: absolute;
+    height: 40px;
+    left: 20px;
+    padding: 0px 30px;
+    font-size: 18px;
+    top: -25px;
+    background: #b53c3c;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+.sale_always_text {
   padding: 0px 30px;
   font-size: 19px;
   сolor: #261421;
 }
-.button_sale{
+
+.button_sale {
   display: inline-block;
   margin: 30px 0px;
   padding: 10px 20px;
@@ -794,53 +802,54 @@ body {
   transition: 0.5s;
 }
 
-.button_sale:hover{
-  background: #b53c3c;
-  color: white;
-}
+  .button_sale:hover {
+    background: #b53c3c;
+    color: white;
+  }
 
 
-.happy_10{
+.happy_10 {
   font-size: 50px;
   align-self: center;
 }
 
-.new_year_subtitle{
+.new_year_subtitle {
   font-size: 18px;
 }
 
-.sale_heppy_new_year{
+.sale_heppy_new_year {
   height: 100%;
   width: 100%;
-  background:url('images/sales/happy_year.jpg') 0 0/ cover no-repeat;
+  background: url('images/sales/happy_year.jpg') 0 0/ cover no-repeat;
 }
 
-@media (max-width: 769px){
-   .sales_container{
+@media (max-width: 769px) {
+  .sales_container {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
-
   }
-  .happy_10{
+
+  .happy_10 {
     padding: 30px 0px;
   }
 
-  .new_year_text{
+  .new_year_text {
     width: 100%;
     flex-direction: column;
     padding: 30px;
     padding: 50px 30px;
   }
-  .text_flex{
+
+  .text_flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 30px 0px;
   }
 
-  .sale_always{
+  .sale_always {
     position: relative;
     flex: 30%;
     background: url(images/sales/sale_fon.jpg) 0 0/ cover no-repeat;
@@ -849,11 +858,10 @@ body {
     margin-top: 50px;
     padding: 50px 0;
   }
-
 }
 
 
-.popup{
+.popup {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -866,7 +874,7 @@ body {
   transition: all 0.8s ease 0s;
 }
 
-.popup_area{
+.popup_area {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -874,7 +882,7 @@ body {
   top: 0;
 }
 
-.popup_body{
+.popup_body {
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -882,7 +890,7 @@ body {
   padding: 30px 10px
 }
 
-.popup_content{
+.popup_content {
   background: white;
   max-width: 900px;
   padding: 30px;
@@ -891,109 +899,110 @@ body {
   opacity: 0;
   transform: translate(0, -100%);
 }
-.popup_close{
+
+.popup_close {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
 
-.popup:target{
+.popup:target {
   opacity: 1;
   visibility: visible;
 }
 
-.popup:target .popup_content{
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
+  .popup:target .popup_content {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
 
 
 /*МАГАЗИНЫ*/
-.stores{
+.stores {
   width: 100%;
   padding: 50px;
 }
 
-.stores_text{
+.stores_text {
   margin: 30px 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.stores_adress{
+.stores_adress {
   flex: 0 1 33%;
   margin: 30px 0;
   font-size: 17px;
   line-height: 22px;
 }
 
-.stores_adress svg{
-  position: relative;
-  height: 20px;
-  margin: 0px 10px;
-}
+  .stores_adress svg {
+    position: relative;
+    height: 20px;
+    margin: 0px 10px;
+  }
 
-.stores_adress a{
-  display: inline-block;
-  margin: 10px 0;
-  color: #261421;
-}
+  .stores_adress a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #261421;
+  }
 
-.stores_adress a:hover {
-  color: #b53c3c;
-}
+    .stores_adress a:hover {
+      color: #b53c3c;
+    }
 
-.stores_adress a:hover *{
-  fill: #b53c3c;
-}
+      .stores_adress a:hover * {
+        fill: #b53c3c;
+      }
 
 /*МАГАЗИНЫ - АДАПТИВ*/
-@media (max-width: 769px){
+@media (max-width: 769px) {
 
-  .stores{
+  .stores {
     width: 100%;
     padding: 20px;
   }
 
-  .stores_text{
+  .stores_text {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
   }
-  .stores_adress{
+
+  .stores_adress {
     flex: 0 1 33%;
     margin: 30px 0;
     font-size: 15px;
     line-height: 20px;
   }
 
-  .stores_adress a{
-    display: inline-block;
-    margin: 5px 0;
-  }
+    .stores_adress a {
+      display: inline-block;
+      margin: 5px 0;
+    }
 
-  .stores_adress svg{
-    position: relative;
-    height: 15px;
-    margin: 0px 10px;
-  }
-
+    .stores_adress svg {
+      position: relative;
+      height: 15px;
+      margin: 0px 10px;
+    }
 }
 
 
 
 
 /*ОБРАТНАЯ СВЯЗЬ*/
-.mail{
+.mail {
   position: relative;
   width: 100vw;
   overflow: hidden;
   padding: 50px 0px 0px 0px;
 }
 
-.mail_fon{
+.mail_fon {
   position: relative;
   overflow: hidden;
   height: auto;
@@ -1001,38 +1010,37 @@ body {
   z-index: 1;
 }
 
-.mail_fon img{
-  position: absolute;
-  width: 100%;
-  top: 0;
-  overflow: hidden;
-}
+  .mail_fon img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+  }
 
-.mail_container{
+.mail_container {
   padding: 50px 30;
   color: white;
-
 }
 
-.mail_container *{
-  z-index: 2;
-}
+  .mail_container * {
+    z-index: 2;
+  }
 
-.mail_container .title{
-  color: white; 
-}
+  .mail_container .title {
+    color: white;
+  }
 
-.forma_container{
+.forma_container {
   position: relative;
   width: 50%;
   margin: 50px 0px;
 }
 
-.mail_subtitle{
+.mail_subtitle {
   font-size: 19px;
 }
 
-.mail_container input{
+.mail_container input {
   position: relative;
   width: 100%;
   background: transparent;
@@ -1042,13 +1050,13 @@ body {
   margin: 10px 0px;
 }
 
-.mail_flex{
+.mail_flex {
   display: flex;
   color: white;
   justify-content: space-between;
 }
 
-.mail_info{
+.mail_info {
   position: relative;
   margin: 10px 0px 0px 0px;
   font-size: 20px;
@@ -1056,7 +1064,7 @@ body {
   display: inline-block;
 }
 
-#button_send{
+#button_send {
   display: inline-block;
   width: auto;
   position: relative;
@@ -1065,21 +1073,20 @@ body {
   font-size: 19px;
   margin-bottom: 50px;
   cursor: pointer;
-  transition: 0.5s ;
-  
+  transition: 0.5s;
 }
 
-#button_send:hover{
-  background: white;
-  color: #261421;
-}
+  #button_send:hover {
+    background: white;
+    color: #261421;
+  }
 
-#button_send:active{
-  background: #cccccc;
-  color: #261421;
-}
+  #button_send:active {
+    background: #cccccc;
+    color: #261421;
+  }
 
-.svg_send{
+.svg_send {
   position: absolute;
   width: 30px;
   fill: white;
@@ -1090,7 +1097,7 @@ body {
 
 @media (max-width: 1200px) {
   /*ОТКЛЮЧЕНИЕ СКРИПТА*/
-  .mail_fon  img{
+  .mail_fon img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1099,14 +1106,14 @@ body {
   }
 }
 
-@media (max-width: 769px){
-  .forma_container{
+@media (max-width: 769px) {
+  .forma_container {
     position: relative;
     width: 100%;
     margin: 50px 0px;
   }
 
-  .button_send{
+  .button_send {
     font-size: 15px;
     margin-left: 10px;
     cursor: pointer;
@@ -1114,25 +1121,24 @@ body {
     user-select: none;
   }
 
-  .mail_flex{
+  .mail_flex {
     display: flex;
     color: white;
     justify-content: space-between;
     flex-direction: column;
   }
-
 }
 
 
 
-.footer{
+.footer {
   position: relative;
   height: 200px;
   background: #141414;
   overflow: hidden;
 }
 
-.footer_container{
+.footer_container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1140,7 +1146,7 @@ body {
   justify-content: space-between;
 }
 
-.footer_links{
+.footer_links {
   position: relative;
   align-self: center;
   display: flex;
@@ -1148,7 +1154,7 @@ body {
   z-index: 2;
 }
 
- .footer_link svg{
+.footer_link svg {
   border: 2px solid rgba(255, 255, 255, 0.6);
   height: 40px;
   fill: rgba(255, 255, 255, 0.6);
@@ -1157,12 +1163,12 @@ body {
   transition: 0.5s;
 }
 
-.footer_link svg:hover{
-  background: white;
-  fill: black;
-}
+  .footer_link svg:hover {
+    background: white;
+    fill: black;
+  }
 
-.footer_links:before{
+.footer_links:before {
   content: '';
   width: 50vw;
   height: 2px;
@@ -1173,7 +1179,7 @@ body {
   left: -52vw;
 }
 
-.footer_links:after{
+.footer_links:after {
   content: '';
   width: 50vw;
   height: 2px;
