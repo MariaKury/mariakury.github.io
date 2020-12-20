@@ -1,15 +1,9 @@
-// $(window).on('beforeunload', e => {
-//   $('body').scrollTop(0)
-//   e.preventDefault()
-// })
-
 $(document).ready(Main)
 
 function Main() {
   $(window).on('resize', Resize_Handler)
 
   Resize_Handler()
-
 }
 
 function Resize_Handler() {
@@ -19,11 +13,11 @@ function Resize_Handler() {
 }
 
 function Scroll_Handler() {
-  Handle_Scroll()
+  Scroll_Header()
   Scroll_Mail()
 }
 
-function Handle_Scroll() {
+function Scroll_Header() {
   const SPEED = 0.50
   const initial_y = -0.2 * window.innerHeight
   const new_y = SPEED * window.scrollY + initial_y
