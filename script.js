@@ -15,7 +15,7 @@ function Main() {
 
 function Resize_Handler() {
   $(window).off('scroll')
-  if (mobile())
+  if (!mobile())
     $(window).on('scroll', Scroll_Handler)
 }
 
