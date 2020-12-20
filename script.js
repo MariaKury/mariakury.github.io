@@ -1,19 +1,21 @@
-const mobile = () => window.innerHeight > window.innerWidth
+const mobile = () => window.innerWidth < 769
 
 $(document).ready(Main)
 
 function Main() {
   $(window).on('resize', Resize_Handler)
 
-  if (mobile)
+  if (mobile())
     $('body').on('click', Body_Click_Handler)
 
   Resize_Handler()
+
+  Set_Menu_Links()
 }
 
 function Resize_Handler() {
   $(window).off('scroll')
-  if (mobile)
+  if (mobile())
     $(window).on('scroll', Scroll_Handler)
 }
 
