@@ -1,3 +1,5 @@
+Prepare_Popup()
+
 const mobile = () => window.innerWidth < 769
 
 $(document).ready(Main)
@@ -12,10 +14,22 @@ function Main() {
 
   Resize_Handler()
 
-  $('.button_sale').on('click', () => {
-    $('.popup').show()
-    $('.button_sale').off('click')
-  })
+  $('.button_sale').on('click', Display_Popup)
+
+  $('.popup').on('click', Close_Popup)
+}
+
+function Prepare_Popup() {
+  $('.popup_content').slideUp(0)
+}
+
+function Display_Popup() {
+  $('.popup').show()
+  $('.popup_content').slideDown(400)
+}
+
+function Close_Popup() {
+  $('.popup_content').slideUp(300, () => $('.popup').hide())
 }
 
 function Resize_Handler() {

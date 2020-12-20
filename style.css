@@ -800,6 +800,7 @@ body {
   border: 2px solid #b53c3c;
   color: #261421;
   transition: 0.5s;
+  cursor: pointer;
 }
 
   .button_sale:hover {
@@ -862,24 +863,14 @@ body {
 
 
 .popup {
+  display: none;
   position: fixed;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
-  opacity: 0;
-  visibility: hidden;
   z-index: 45665;
-  transition: all 0.8s ease 0s;
-}
-
-.popup_area {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
 }
 
 .popup_body {
@@ -895,28 +886,14 @@ body {
   max-width: 900px;
   padding: 30px;
   position: relative;
-  transition: all 0.8s ease 0s;
-  opacity: 0;
-  transform: translate(0, -100%);
 }
 
 .popup_close {
+  cursor: pointer;
   position: absolute;
   top: 10px;
   right: 10px;
 }
-
-
-.popup:target {
-  opacity: 1;
-  visibility: visible;
-}
-
-  .popup:target .popup_content {
-    transform: translate(0px, 0px);
-    opacity: 1;
-  }
-
 
 /*МАГАЗИНЫ*/
 .stores {
@@ -960,7 +937,6 @@ body {
 
 /*МАГАЗИНЫ - АДАПТИВ*/
 @media (max-width: 769px) {
-
   .stores {
     width: 100%;
     padding: 20px;
