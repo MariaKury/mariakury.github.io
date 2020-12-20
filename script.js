@@ -1,14 +1,19 @@
+const mobile = () => window.innerHeight > window.innerWidth
+
 $(document).ready(Main)
 
 function Main() {
   $(window).on('resize', Resize_Handler)
+
+  if (mobile)
+    $('body').on('click', Body_Click_Handler)
 
   Resize_Handler()
 }
 
 function Resize_Handler() {
   $(window).off('scroll')
-  if (window.innerWidth >= 1200)
+  if (mobile)
     $(window).on('scroll', Scroll_Handler)
 }
 
@@ -30,4 +35,24 @@ function Scroll_Mail() {
   const top_boundary = $('.mail').offset().top
   const new_y = SPEED * (window.scrollY - top_boundary) + initial_y
   $('.mail_fon img').css('top', new_y)
+}
+
+function Body_Click_Handler(e) {
+  if ($('.menu').is(':visible')) 
+    Close_Menu()
+  else {
+    const daddy = document.querySelector('.banner_burger')
+    if ($.contains(daddy, e.target))
+      Open_Menu()
+  }
+}
+
+function Open_Menu() {
+  $('.menu').show()
+  $('.open_burger_menu').hide()
+}
+
+function Close_Menu() {
+  $('.menu').hide()
+  $('.open_burger_menu').show()
 }
