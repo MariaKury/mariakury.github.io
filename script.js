@@ -11,6 +11,11 @@ function Main() {
     $('body').on('click', Body_Click_Handler)
 
   Resize_Handler()
+
+  $('.button_sale').on('click', () => {
+    $('.popup').show()
+    $('.button_sale').off('click')
+  })
 }
 
 function Resize_Handler() {
@@ -74,8 +79,12 @@ function Set_Menu_Links() {
     $('body').animate({
       scrollTop: $('.products').offset().top - banner_h()
     }))
-  $('#btn_stores').on('click', () => 
+  $('#btn_stores').on('click', () =>
     $('body').animate({
       scrollTop: $('.stores').offset().top - banner_h()
+    }))
+  $('#btn_sales').on('click', () =>
+    $('body').animate({
+      scrollTop: $('.sales').offset().top - banner_h()
     }))
 }

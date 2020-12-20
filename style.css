@@ -148,8 +148,8 @@ body {
   font-size: 18px;
   cursor: pointer;
   border: 2px solid transparent;
-  transition: 0.5s;
   color: #261421;
+  transition: 0.5s;
 }
 
   .menu_row__link:hover {
@@ -293,11 +293,11 @@ body {
   }
 
 
-.botton_white {
+.button_white {
   border: 2px solid white;
 }
 
-  .botton_white:hover {
+  .button_white:hover {
     color: #261421;
     background: white;
   }
