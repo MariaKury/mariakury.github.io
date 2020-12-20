@@ -5,12 +5,12 @@ $(document).ready(Main)
 function Main() {
   $(window).on('resize', Resize_Handler)
 
+  Set_Menu_Links()
+
   if (mobile())
     $('body').on('click', Body_Click_Handler)
 
   Resize_Handler()
-
-  Set_Menu_Links()
 }
 
 function Resize_Handler() {
@@ -57,4 +57,25 @@ function Open_Menu() {
 function Close_Menu() {
   $('.menu').hide()
   $('.open_burger_menu').show()
+}
+
+const banner_h = () => $('#banner').get(0).offsetHeight
+
+function Set_Menu_Links() {
+  $('#btn_home').on('click', () =>
+    $('body').animate({
+      scrollTop: '0'
+    }))
+  $('#btn_about').on('click', () =>
+    $('body').animate({
+      scrollTop: $('.about').offset().top - banner_h()
+    }))
+  $('#btn_products').on('click', () =>
+    $('body').animate({
+      scrollTop: $('.products').offset().top - banner_h()
+    }))
+  $('#btn_stores').on('click', () => 
+    $('body').animate({
+      scrollTop: $('.stores').offset().top - banner_h()
+    }))
 }
