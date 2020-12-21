@@ -158,6 +158,17 @@ body {
     border: 2px solid #751a2c;
   }
 
+  .menu_tel{
+    position: relative;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    color: white;
+    background: #751a2c;
+    border: 2px solid #751a2c;
+  }
+
 
 /*БАННЕР - АДАПТИВ*/
 @media (max-width: 769px) {
@@ -332,9 +343,9 @@ body {
     width: 35px;
     transition: 0.5s;
     padding: 5px;
-    fill: #751a2c;
+    fill: #261421;
     background: white;
-    border: 2px solid #751a2c;
+    border: 2px solid #261421;
   }
 
     .header_footer_link svg:hover {
@@ -886,6 +897,11 @@ body {
   max-width: 900px;
   padding: 30px;
   position: relative;
+}
+
+.popup_content img{
+  width: 100%;
+  height: auto;
 }
 
 .popup_close {
