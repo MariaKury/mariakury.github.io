@@ -17,6 +17,8 @@ function Main() {
   $('.button_sale').on('click', Display_Popup)
 
   $('.popup').on('click', Close_Popup)
+
+  $('#btn_send').on('click', Send_Handler)
 }
 
 function Prepare_Popup() {
@@ -76,6 +78,11 @@ function Open_Menu() {
 function Close_Menu() {
   $('.menu').hide()
   $('.open_burger_menu').show()
+}
+
+function Send_Handler() {
+  $('.svg_send').css('display', 'inline-block')
+  setTimeout(() => $('.svg_send').hide(), 3000)
 }
 
 const banner_h = () => $('#banner').get(0).offsetHeight

@@ -1034,13 +1034,19 @@ body {
 
 .mail_info {
   position: relative;
+  float: right;
   margin: 10px 0px 0px 0px;
   font-size: 20px;
   line-height: 26px;
   display: inline-block;
 }
 
-#button_send {
+.send_container {
+  position: relative;
+  width: 100%;
+}
+
+#btn_send {
   display: inline-block;
   width: auto;
   position: relative;
@@ -1052,27 +1058,26 @@ body {
   transition: 0.5s;
 }
 
-  #button_send:hover {
+  #btn_send:hover {
     background: white;
     color: #261421;
   }
 
-  #button_send:active {
+  #btn_send:active {
     background: #cccccc;
     color: #261421;
   }
 
 .svg_send {
-  position: absolute;
-  width: 30px;
-  fill: white;
-  bottom: 20px;
   display: none;
+  position: relative;
+  width: 35px;
+  fill: white;
+  margin-left: 35px;
 }
 
 
 @media (max-width: 1200px) {
-  /*ОТКЛЮЧЕНИЕ СКРИПТА*/
   .mail_fon img {
     position: absolute;
     width: 100%;
@@ -1089,12 +1094,16 @@ body {
     margin: 50px 0px;
   }
 
-  .button_send {
+  .btn_send {
     font-size: 15px;
     margin-left: 10px;
     cursor: pointer;
     transition: 0.5s;
     user-select: none;
+  }
+
+  .mail_info {
+    float: none;
   }
 
   .mail_flex {
@@ -1104,8 +1113,6 @@ body {
     flex-direction: column;
   }
 }
-
-
 
 .footer {
   position: relative;
