@@ -7,6 +7,9 @@ $(document).ready(Main)
 function Main() {
   $(window).on('resize', Resize_Handler)
 
+  if (mobile())
+    Set_Mobile_Menu()
+
   Set_Menu_Links()
 
   if (mobile())
@@ -16,7 +19,7 @@ function Main() {
 
   $('.button_sale').on('click', Display_Popup)
 
-  $('.popup').on('click', Close_Popup)
+  $('#popup_sale').on('click', Close_Popup_Sale)
 
   $('#btn_send').on('click', Send_Handler)
 }
@@ -26,12 +29,12 @@ function Prepare_Popup() {
 }
 
 function Display_Popup() {
-  $('.popup').show()
+  $('#popup_sale').show()
   $('.popup_content').slideDown(400)
 }
 
-function Close_Popup() {
-  $('.popup_content').slideUp(300, () => $('.popup').hide())
+function Close_Popup_Sale() {
+  $('.popup_content').slideUp(300, () => $('#popup_sale').hide())
 }
 
 function Resize_Handler() {
@@ -71,12 +74,12 @@ function Body_Click_Handler(e) {
 }
 
 function Open_Menu() {
-  $('.menu').show()
+  $('#popup_menu').show()
   $('.open_burger_menu').hide()
 }
 
 function Close_Menu() {
-  $('.menu').hide()
+  $('#popup_menu').hide()
   $('.open_burger_menu').show()
 }
 
@@ -108,4 +111,11 @@ function Set_Menu_Links() {
     $('body').animate({
       scrollTop: $('.sales').offset().top - banner_h()
     }))
+}
+
+function Set_Mobile_Menu() {
+  const menu = $('.menu')
+  menu.remove()
+  $('.banner_row').append($('<div id="popup_menu" class="popup"></div>'))
+  $('#popup_menu').append(menu)
 }

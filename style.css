@@ -172,10 +172,6 @@ body {
 
 /*БАННЕР - АДАПТИВ*/
 @media (max-width: 769px) {
-  .menu {
-    display: none;
-  }
-
   .banner_burger {
     display: block;
   }
@@ -872,9 +868,7 @@ body {
   }
 }
 
-
 .popup {
-  display: none;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -882,6 +876,10 @@ body {
   top: 0;
   left: 0;
   z-index: 45665;
+}
+
+#popup_sale, #popup_menu {
+  display: none;
 }
 
 .popup_body {
