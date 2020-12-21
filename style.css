@@ -154,13 +154,13 @@ body {
 
   .menu_row__link:hover {
     color: white;
-    background: #751a2c;
-    border: 2px solid #751a2c;
+    background: #b53c3c;
+    border: 2px solid #b53c3c;
   }
 
   .menu_tel{
     position: relative;
-    margin: 0 10px;
+    margin: 0 10px 0 100px;
     padding: 10px;
     font-size: 18px;
     border: 2px solid transparent;
@@ -214,6 +214,18 @@ body {
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
+  }
+
+  .menu_tel{
+    position: relative;
+    margin: 10px 10px ;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    color: white;
+    background: #751a2c;
+    border: 2px solid #751a2c;
+    text-align: center;
   }
 }
 
@@ -279,6 +291,7 @@ body {
   display: flex;
   cursor: pointer;
   transition: 0.5s;
+  background: #751a2c;
 }
 
   .header_buttons_button a {
@@ -299,14 +312,15 @@ body {
     transform: translate(0, -50%);
   }
 
-
-.button_white {
-  border: 2px solid white;
-}
+  .button_white{
+    transition: 0.5s;
+    border: 2px solid #751a2c;
+  }
 
   .button_white:hover {
-    color: #261421;
-    background: white;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
   }
 
 
@@ -339,9 +353,9 @@ body {
     width: 35px;
     transition: 0.5s;
     padding: 5px;
-    fill: #261421;
+    fill: rgba(0,0,0,0.8);
     background: white;
-    border: 2px solid #261421;
+    border: 2px solid rgba(0,0,0,0.7);
   }
 
     .header_footer_link svg:hover {
@@ -892,7 +906,7 @@ body {
 
 .popup_content {
   background: white;
-  max-width: 900px;
+  max-width: 500px;
   padding: 30px;
   position: relative;
 }
@@ -1130,7 +1144,7 @@ body {
 
 .footer {
   position: relative;
-  height: 200px;
+  height: 150px;
   background: #141414;
   overflow: hidden;
 }
