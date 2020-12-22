@@ -653,7 +653,6 @@ body {
   height: 100px;
   background-color: rgba(255, 255, 255, 0.7);
   transition: 0.5s all;
-  cursor: pointer;
   overflow: hidden;
   padding: 30px;
 }
@@ -688,7 +687,6 @@ body {
 
 .products_column:hover {
   background-color: white;
-  height: 400px;
 }
 
 /*ТОВАРЫ*/
