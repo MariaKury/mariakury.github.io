@@ -662,7 +662,6 @@ body {
   position: relative;
   top: 0;
   height: 100px;
-  width: 100%;
 }
 
 
@@ -671,6 +670,20 @@ body {
   bottom: 0;
   height: 200px;
   font-size: 16px;
+}
+
+.product_img{
+  position: relative;
+  height: 270px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product_img img{
+  position: absolute;
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .products_column:hover {
@@ -717,10 +730,7 @@ body {
     padding: 20px;
   }
 
-    .products_column:hover {
-      background-color: white;
-      height: 450px;
-    }
+   
 
   .products_container {
     margin-bottom: 30px;
