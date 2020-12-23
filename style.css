@@ -534,15 +534,15 @@ body {
 
 /*МАТЕРИАЛЫ*/
 .materials {
-  padding: 100px 0px;
+  padding: 50px 0px;
   font-size: 17px;
   line-height: 22px;
-  background: url(images/PF_2.jpg) 0 0/cover no-repeat fixed;
+  background: url(images/materials_fon.jpg) 0 0/cover no-repeat fixed;
 }
 
 .materials_container{
-  padding: 50px 30px;
-   background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  color: white;
 }
 .materials_text li {
   position: relative;
@@ -566,9 +566,6 @@ body {
   transition: 0.5s;
 }
 
-.materials_row:hover{
-  background: white;
-}
 
 .materials_flex {
   display: flex;
@@ -620,126 +617,107 @@ body {
 
 
 /*ТОВАРЫ*/
-.products {
+.prod{
+  padding: 100px 0px;
+  position: relative;
   width: 100%;
-  background-color: #f7e7e4;
-  padding: 50px;
   background: url(images/PF_2.jpg) 0 0/cover no-repeat fixed;
 }
 
-.products_flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.products_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.products_title {
-  font-size: 27px;
-  padding: 30px 0px;
-  position: relative;
-  display: inline-block;
-  margin: 0 0px;
-}
-
-  .products_title span {
-    display: inline-block;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-
-.products_text {
-  font-size: 20px;
-  line-height: 22px;
-}
-
-.products_column {
-  position: relative;
-  height: 100px;
-  background-color: rgba(255, 255, 255, 0.7);
-  transition: 0.5s all;
-  overflow: hidden;
-  padding: 30px;
-}
-
-.product_name {
-  position: relative;
-  top: 0;
-  height: 100px;
-}
-
-
-.product_text {
-  position: relative;
-  bottom: 0;
-  height: 200px;
-  font-size: 16px;
-}
-
-.product_img{
-  position: relative;
-  height: 270px;
+.products_title{
   width: 100%;
-  overflow: hidden;
+  background: white;
+  position: relative;
+  font-size: 30px;
+  padding: 50px 20px;
 }
 
-.product_img img{
-  position: absolute;
-  height: 240px;
+.title_container{
+   padding: 0px 40px;
+  background: white;
+}
+
+.prod_container{
+  display: flex;
+  height: 400px;
+  overflow: hidden;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 40px;
+  background: white;
+}
+
+.prod_one{
+  position: relative;
+  height: 100%;
+  border: 15px solid white;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.home_one img{
+  height: 100%;
   width: 100%;
   object-fit: cover;
+  z-index: 1;
 }
 
-.products_column:hover {
-  background-color: white;
+.prod_name{
+  height: 20%;
+  font-size: 23px;
 }
 
-/*ТОВАРЫ*/
-@media (max-width: 769px) {
-  .products {
-    padding: 0px 0px;
+.prod_text{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: -80%;
+  left: 0;
+  background: rgba(255,255,255, 0.7);
+  z-index: 2;
+  font-size: 18px;
+  padding: 20px 50px;
+  transition: 0.5s;
+}
+
+.prod_one:hover .prod_text{
+  bottom: 0;
+  background: white;
+}
+
+@media (max-width: 769px){
+  .prod{
+    height: auto;
+    padding-left: 0px;
   }
 
-  .products_title {
-    font-size: 24px;
-    padding: 30px 0px;
-    margin: 0px 0px;
-  }
+.prod_name{
+  height: 20%;
+  font-size: 18px;
+}
 
-  .products_text {
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  .product_text {
-    position: relative;
-    bottom: 0;
-    height: 250px;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  .products_container {
+  .prod_container{
     display: flex;
-    flex-direction: column;
-  }
-
-  .products_column {
-    position: relative;
-    height: 100px;
-    transition: 0.5s all;
-    cursor: pointer;
+    flex-wrap: wrap;
+    height: auto;
     overflow: hidden;
-    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
   }
 
+  .prod_one{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 5px solid white;
+  }
 
-  .products_container {
-    margin-bottom: 30px;
+  
+
+  .prod_text{
+    font-size: 15px;
+    padding: 20px;
   }
 }
 
