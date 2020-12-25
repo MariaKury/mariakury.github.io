@@ -537,7 +537,8 @@ body {
   padding: 50px 0px;
   font-size: 17px;
   line-height: 22px;
-  background: url(images/mater_white.jpg) 0 0/cover no-repeat fixed;
+  background: url(images/materials_fon.jpg) 0 0/cover no-repeat fixed;
+  color: white;
 }
 
 .materials_container{
@@ -621,7 +622,7 @@ body {
   width: 100%;
   background: #dbdbdb;
   padding: 50px 0px;
-  background: url(images/PF_white.jpg) 0 0/cover no-repeat fixed;
+  background: url(images/PF_2.jpg) 0 0/cover no-repeat fixed;
 }
 
 .products_title{
@@ -629,10 +630,11 @@ body {
   position: relative;
   font-size: 30px;
   padding: 50px 20px;
+  background: white;
 }
 
 .title_container{
-  padding: 0px 40px;
+  padding: 0px 00px;
 }
 
 .prod_container{
@@ -642,6 +644,7 @@ body {
   width: 100%;
   justify-content: space-between;
   padding: 0px 40px;
+  background: white;
 }
 
 .prod_one{
@@ -650,7 +653,7 @@ body {
   border: 15px solid white;
   overflow: hidden;
   cursor: pointer;
-  margin: 20px;
+  /*margin: 20px;*/
   flex: 0 1 50%;
 }
 
