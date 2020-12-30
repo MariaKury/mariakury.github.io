@@ -318,6 +318,12 @@ body {
   .header_svg svg{
     height: 20px;
   }
+   .header_fon img{
+    display: none;
+   }
+   .header{
+    background: url(images/home_fon.jpg) 50% 0/cover no-repeat fixed;
+   }
 
 }
 
@@ -377,7 +383,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  width: 350px;
   padding: 100px 20px;
   font-size: 16px;
   line-height: 20px;
@@ -519,7 +525,12 @@ body {
 }
 
 @media (max-width: 769px){
-
+  .sub_fon img{
+    display: none;
+  }
+  .sub_fon{
+    background: url(images/sub_fon.jpg) 50% 0/cover no-repeat fixed;
+  }
 }
 
 
@@ -1048,6 +1059,13 @@ body {
 
 
 @media (max-width: 769px){
+ .mail_fon img {
+  display: none;
+ }
+
+.mail{
+  background: url(images/mail_fon.jpg) 0 0/cover no-repeat fixed;
+}
   .mail_title{
     font-size: 25px;
   }
@@ -1072,6 +1090,9 @@ body {
   .mail_flex {
     flex-direction: column;
   }
+
+
+
 }
 
 
