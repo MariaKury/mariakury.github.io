@@ -376,6 +376,7 @@ body {
   color: white;
   display: flex;
   justify-content: space-around;
+  padding: 30px;
 }
 
 .about_what{
@@ -409,6 +410,7 @@ body {
     margin: 0px;
   }
 
+
   .about_title p{
     position: relative;
     font-size: 25px;
@@ -427,7 +429,9 @@ body {
 
   .about_text{
    flex-direction: column;
-   justify-content: flex-start;   
+   justify-content: flex-start;
+   padding: 0;
+   width: 100%; 
   }
 
   .about_what{
