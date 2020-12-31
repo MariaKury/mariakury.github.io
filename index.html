@@ -1,15 +1,15 @@
 ﻿<html>
 <head>
   <meta charset="utf-8">
+  <title>Багетная мастерская Рамки Рамочки</title>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="./JS/fotorama/fotorama.css">
   <meta name="viewport" content="width=device-width" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <title>Багетная мастерская Рамки Рамочки</title>
+  <script src="./jquery.js"></script>
 </head>
 <body>
  
-
 <div id="banner" class="banner">
     <div class="banner_row container">
       <div class="logo"><img src="LOGO/logo_1_layer_white.png" alt=""></div>
@@ -62,6 +62,11 @@
     </div>
   </div>
 
+  <script>
+    if(window.innerWidth < 769)
+      $('.header').css('height', `${screen.height}`)
+  </script>
+
 
  	<div class="about">
  		<div class="about_title"><p>Что мы можем Вам предложить</p></div>
@@ -104,6 +109,12 @@
  			</div>
  		</div>
  	</div>
+
+
+   <script>
+    if(window.innerWidth < 769)
+      $('.sub_fon').css('height', `${0.3*screen.height}`)
+  </script>
 
  	<div class="sub_fon"><img src="images/sub_fon.jpg"></div>
 
@@ -320,7 +331,6 @@
 
 
  		<script src="./JS/fotorama/fotorama.js"></script>
-    <script src="./jquery.js"></script>
     <script src="./jqueryui.js"></script>
     <script src="./script.js"></script>
 </body>
