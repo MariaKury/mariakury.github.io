@@ -215,7 +215,7 @@ body {
  .banner_burger{
     display: block;
     position: fixed;
-    width: 30px;
+    width: 40px;
     right: 30px;
     top: 30px;
     border: 2px solid white;
@@ -372,7 +372,7 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
-  background: #664c41;
+  background: #5e4e47;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -384,11 +384,11 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 350px;
   padding: 100px 20px;
   font-size: 16px;
   line-height: 20px;
   text-align: justify;
+  width: 100%;
 }
 
 .what_title{
@@ -452,7 +452,7 @@ body {
 
 .materials{
   width: 100vw;
-  background: #3d322d;
+  background: #403b39;
 }
 
 .materials_container{
@@ -476,11 +476,11 @@ body {
 .materials_list p{
   font-size: 25px;
   margin: 20px 0px;
-  color: #9c7a6a;  
+
 }
 
 .materials_list li{
-  padding: 7px 0px;
+  padding: 7px 10px;
   position: relative;
 }
 
@@ -492,7 +492,7 @@ body {
   background: #9c7a6a;
   top: 50%;
   transform: translate(0, -50%);
-  left: -20px;
+  left: -10px;
 }
 
 
@@ -544,7 +544,7 @@ body {
   display: flex;
   width: 100vw;
   color: white;
-  background: #3d322d;
+  background: #5e4e47;
 }
 
 
@@ -633,6 +633,7 @@ body {
     justify-content: space-around;
     padding: 50px 30px;
     flex-direction: column;
+   
   }
 
   .why_text_row{
@@ -680,8 +681,8 @@ body {
   color: grey;
   text-align: center;
   padding: 50px 0px;
-  color: #c9a391;
-  background: #664c41;
+  color: white;
+  background: #403b39;
   height: 700px;
 }
 
@@ -805,8 +806,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.7s;
+  transition: 0.5s;
   opacity: 0;
+  z-index: 3;
 }
 
 .product_name:before{
@@ -870,7 +872,7 @@ body {
 
 
 .stores{
-  background: #664c41;
+  background: #5e4e47;
   width: 100%;
   color: white;
   display: flex;
@@ -882,8 +884,8 @@ body {
   display: flex;
   align-items: center;  
   font-size: 25px;
-  color: #c9a391;
-  background: #3d322d; 
+  color: white;
+  background: #403b39; 
   text-align: center;
 }
 
