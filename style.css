@@ -893,6 +893,21 @@ body {
  padding: 0px 30px;
 }
 
+
+.stores_title p:before{
+  content: url(ornament/stores_up.png);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -90px);
+}
+
+.stores_title p:after{
+  content: url(ornament/stores_down.png);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20px);
+}
+
 .stores_container{
   display: flex;
   justify-content: space-between;
@@ -939,7 +954,7 @@ body {
   }
   .stores_title p{
     position: relative;
-    padding: 50px 30px;
+    padding: 100px 30px;
   }
   .stores_container{
     flex-direction: column;
